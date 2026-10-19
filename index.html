@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hishab – হিসাব</title>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--bg:#f4f5fa;--card:#fff;--ink:#1b2233;--mut:#6b7385;--line:#dfe3ec;--exp:#d9435b;--inc:#0f9d7a;--acc:#4338ca;--on:#fff;--sh:rgba(27,34,51,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#11131a;--card:#1a1d27;--ink:#e8eaf2;--mut:#98a0b3;--line:#2c3040;--exp:#ff7b8f;--inc:#4fd1aa;--acc:#8b8cf8;--on:#11131a;--sh:rgba(0,0,0,.5);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.4 'Anek Bangla',system-ui,sans-serif;padding-bottom:150px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+[hidden]{display:none!important}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;box-shadow:0 4px 10px var(--sh)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;max-width:720px;margin:auto}
+.logo{font:800 26px 'Anek Bangla',sans-serif;margin:0;letter-spacing:-.5px}
+.lb{border:2px solid var(--acc);background:none;color:var(--ink);border-radius:20px;padding:4px 14px;font:inherit;font-weight:700}
+.mb{display:flex;justify-content:center;align-items:center;gap:26px;font-size:20px;padding:2px}
+.mb button{border:0;background:none;color:var(--ink);font-size:34px;line-height:1;padding:0 12px}
+.sum{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:10px 6px;width:calc(100% - 28px);max-width:692px;margin:4px auto 12px;font-size:14px;background:var(--card);border-radius:16px;box-shadow:0 1px 4px var(--sh)}
+.sum b{display:block;font-size:19px}
+.e{color:var(--exp)}.i{color:var(--inc)}
+main{max-width:720px;margin:0 auto;padding:0 14px}
+h3{font-size:17px;margin:22px 0 0;padding-bottom:4px;border-bottom:2px solid var(--line)}
+.fx{display:flex;gap:12px;align-items:center}
+.rw{padding:10px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.mid{flex:1;min-width:0}.mid small{display:block;color:var(--mut)}.mid em{font-style:normal;font-size:13px;color:var(--mut)}
+.rw>span{font-weight:700;white-space:nowrap}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-style:normal;font-size:22px;flex:none;color:#fff}
+.emp{text-align:center;color:var(--mut);padding:60px 20px}
+.big{font-size:18px;margin:16px 4px}
+nav.bn{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--bg);box-shadow:0 -2px 10px var(--sh);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav button{flex:1;border:0;background:none;color:var(--mut);font:inherit;font-size:12px;padding:8px 0}
+nav button span{font-size:20px}nav button.on{color:var(--ink);font-weight:700}
+.fab{position:fixed;right:18px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:18px;background:var(--acc);border:0;box-shadow:0 6px 16px var(--sh);font-size:34px;color:var(--on);z-index:6}
+#m{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--bg);width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:20px 20px 0 0;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.sheet h2{margin:0 0 10px;font-size:20px}
+input,select,textarea{width:100%;font:inherit;color:inherit;background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px}
+input[type=color]{height:44px;padding:2px}
+label span{display:block;font-size:13px;color:var(--mut);margin:10px 0 3px}
+.tabs{display:flex;gap:6px;margin:12px 0 4px}
+.tabs button{flex:1;padding:9px;border:2px solid var(--line);border-radius:10px;background:none;color:var(--ink);font:inherit}
+.tabs .on{background:var(--acc);color:var(--on);border-color:var(--acc)}
+.row{display:flex;gap:8px;margin-top:14px}
+.row button{flex:1;padding:12px;border-radius:12px;font:inherit;font-weight:600;border:2px solid var(--acc)}
+.p{background:var(--acc);color:var(--on)}.g{background:none;color:var(--ink);border-color:var(--line)!important}.dng{color:var(--exp);border-color:var(--exp)!important}
+.ts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(100px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:20px;z-index:20}
+.dn{width:180px;height:180px;border-radius:50%;margin:18px auto;position:relative}
+.dn::after{content:"";position:absolute;inset:38px;border-radius:50%;background:var(--bg)}
+.bars{display:flex;gap:10px;height:150px;margin-top:12px}
+.bc{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;height:100%}
+.pr{display:flex;gap:3px;align-items:flex-end;height:120px;width:100%;justify-content:center}
+.pr b{width:40%;border-radius:4px 4px 0 0;display:block;min-height:2px}
+.pg{height:10px;border-radius:6px;background:rgba(122,165,151,.3);margin-top:8px;overflow:hidden}.pg i{display:block;height:100%}
+.bd{padding:10px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}td:last-child,th:last-child{text-align:right}
+.rpt{margin-top:22px}
+@media print{header,nav.bn,.fab,.noprint,.ts,#m,body::before{display:none!important}
+body{--bg:#fff;--ink:#000;--card:#fff;--line:#999;--mut:#444;--exp:#b00020;--inc:#1b5e20;padding:0;background:#fff;color:#000}
+:root{padding:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}main{max-width:none;padding:0}tr{break-inside:avoid}}
+</style></head><body>
+<header><div class="top"><span class="logo" id="lgo"></span><span class="fx" style="gap:8px"><button id="th" class="lb" data-a="theme" aria-label="Theme"></button><button id="lg" class="lb" data-a="lang"></button></span></div><div id="mn"></div></header>
+<main id="v"></main>
+<button id="fab" class="fab" data-a="add" aria-label="Add">+</button>
+<nav class="bn" id="nv"></nav>
+<div id="m" hidden></div><div id="ts" class="ts" hidden></div>
+<script>
+const D={en:{rec:'Entries',ana:'Insights',bud:'Budgets',acc:'Wallets',cat:'Categories',rep:'Reports',exp:'Expense',inc:'Income',tot:'Total',tr:'Transfer',account:'Account',category:'Category',note:'Notes',amt:'Amount (you can type 50+20)',date:'Date & time',save:'Save',cancel:'Cancel',del:'Delete',add:'Add record',edit:'Edit',empty:'No records yet. Tap + to add your first one.',left:'left',over:'over',set:'Set budget',bal:'Balance',print:'Print',pdf:'Download PDF',wait:'Making PDF…',nodl:'If no file downloads, tap Print and choose “Save as PDF”',csv:'Download CSV',copy:'Copy CSV',from:'From',to:'To',stmt:'Statement',name:'Name',icon:'Icon (emoji)',color:'Color',opening:'Opening balance',addAcc:'Add account',addCat:'Add category',bad:'Enter a valid amount or name',none:'Nothing to show for this month',mo:'Last 6 months',used:'In use, can’t delete',total:'Net balance',tx:'Transactions',bud1:'Monthly budget'},
+bn:{rec:'লেনদেন',ana:'বিশ্লেষণ',bud:'বাজেট',acc:'ওয়ালেট',cat:'ক্যাটাগরি',rep:'রিপোর্ট',exp:'খরচ',inc:'আয়',tot:'মোট',tr:'ট্রান্সফার',account:'অ্যাকাউন্ট',category:'ক্যাটাগরি',note:'নোট',amt:'টাকার পরিমাণ (50+20 লিখতে পারবেন)',date:'তারিখ ও সময়',save:'সেভ',cancel:'বাতিল',del:'মুছুন',add:'রেকর্ড যোগ',edit:'সম্পাদনা',empty:'এখনো কোনো রেকর্ড নেই। + চেপে প্রথমটি যোগ করুন।',left:'বাকি',over:'বেশি',set:'বাজেট ঠিক করুন',bal:'ব্যালেন্স',print:'প্রিন্ট',pdf:'PDF ডাউনলোড',wait:'PDF বানানো হচ্ছে…',nodl:'ফাইল না নামলে Print চেপে "Save as PDF" বেছে নিন',csv:'CSV ডাউনলোড',copy:'CSV কপি',from:'শুরু',to:'শেষ',stmt:'হিসাবের বিবরণী',name:'নাম',icon:'আইকন (ইমোজি)',color:'রং',opening:'শুরুর ব্যালেন্স',addAcc:'অ্যাকাউন্ট যোগ',addCat:'ক্যাটাগরি যোগ',bad:'সঠিক পরিমাণ বা নাম দিন',none:'এই মাসে দেখানোর মতো কিছু নেই',mo:'গত ৬ মাস',used:'ব্যবহার হচ্ছে, মোছা যাবে না',total:'নিট ব্যালেন্স',tx:'লেনদেন',bud1:'মাসিক বাজেট'}};
+const K='hishab.v1',$=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let S=null;try{S=JSON.parse(localStorage.getItem(K)||localStorage.getItem('mymoney.v1'))}catch(e){}
+const C=(id,en,bn,icon,color,type)=>({id,name:{en,bn},icon,color,type});
+if(!S||!S.cats)S={lang:'bn',accounts:[{id:'a1',name:{en:'Cash',bn:'নগদ'},icon:'💵',ob:0}],b:{},recs:[],cats:[
+C('food','Food','খাবার','🍽️','#b71c1c','e'),C('edu','Education','শিক্ষা','🎓','#283593','e'),C('trn','Transportation','যাতায়াত','🚌','#1a237e','e'),C('shop','Shopping','কেনাকাটা','🛍️','#ad1457','e'),C('bill','Bills','বিল','💡','#e65100','e'),C('hlth','Health','স্বাস্থ্য','💊','#00838f','e'),C('oth','Other','অন্যান্য','📦','#6d4c41','e'),
+C('sal','Salary','বেতন','💼','#2e7d32','i'),C('biz','Business','ব্যবসা','🏪','#00695c','i'),C('oi','Other','অন্যান্য','💰','#558b2f','i')]};
+const sv=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}},t=k=>D[S.lang][k],loc=()=>S.lang==='bn'?'bn-BD':'en-US';
+const fm=(n,sg)=>(sg||'')+'৳'+Number(n).toLocaleString(loc(),{minimumFractionDigits:2,maximumFractionDigits:2});
+const fd=ts=>new Date(ts).toLocaleDateString(loc(),{month:'short',day:'numeric',weekday:'long'});
+const ft=ts=>new Date(ts).toLocaleDateString(loc(),{year:'numeric',month:'short',day:'numeric'});
+const now=new Date();let M=now.getFullYear()*12+now.getMonth(),tab='rec';
+const mr=(m=M)=>[new Date(Math.floor(m/12),m%12,1).getTime(),new Date(Math.floor(m/12),m%12+1,1).getTime()];
+const inR=([a,b])=>S.recs.filter(r=>r.ts>=a&&r.ts<b);
+const sm=rs=>{let e=0,i=0;rs.forEach(r=>{if(r.t==='e')e+=r.amt;if(r.t==='i')i+=r.amt});return{e,i}};
+const cat=id=>S.cats.find(c=>c.id===id)||{name:'?',icon:'❔',color:'#888'},acc=id=>S.accounts.find(a=>a.id===id)||{name:'?',icon:'❔'};
+const nm=o=>typeof o.name==='string'?o.name:o.name[S.lang];
+const bal=a=>S.recs.reduce((s,r)=>r.t==='e'&&r.acc===a.id?s-r.amt:r.t==='i'&&r.acc===a.id?s+r.amt:r.t==='t'?s-(r.acc===a.id?r.amt:0)+(r.to===a.id?r.amt:0):s,+a.ob||0);
+const ev=s=>{s=String(s).replace(/[০-৯]/g,d=>'০১২৩৪৫৬৭৮৯'.indexOf(d)).replace(/,/g,'').replace(/×/g,'*').replace(/÷/g,'/').replace(/(?<![\d.])0+(?=\d)/g,'').trim();if(!/^[\d+\-*/.() ]+$/.test(s))return NaN;try{return Math.round(Function('return('+s+')')()*100)/100}catch(e){return NaN}};
+const ic=(i,c)=>`<i class="ic" style="background:${c}">${i}</i>`;
+const lt=ts=>new Date(ts-new Date(ts).getTimezoneOffset()*6e4).toISOString().slice(0,16);
+const d2=ts=>lt(ts).slice(0,10);
+const ml=()=>new Date(Math.floor(M/12),M%12,1).toLocaleDateString(loc(),{month:'long',year:'numeric'});
+const sumH=s=>{const x=s.i-s.e;return`<div class="sum"><div>${t('exp')}<b class="e">${fm(s.e)}</b></div><div>${t('inc')}<b class="i">${fm(s.i)}</b></div><div>${t('tot')}<b class="${x<0?'e':'i'}">${fm(Math.abs(x),x<0?'-':'')}</b></div></div>`};
+const tb=(a,cur)=>`<div class="tabs">`+[['e',t('exp')],['i',t('inc')]].map(([k,l])=>`<button data-a="${a}:${k}" class="${cur===k?'on':''}">${l}</button>`).join('')+`</div>`;
+let rp={f:d2(mr()[0]),t:d2(mr()[1]-1)};
+const repRecs=()=>{const a=new Date(rp.f+'T00:00').getTime(),b=new Date(rp.t+'T23:59:59').getTime();return S.recs.filter(r=>r.ts>=a&&r.ts<=b).sort((x,y)=>x.ts-y.ts)};
+const csv=rs=>'\ufeff'+['Date,Type,Category,Account,Note,Amount'].concat(rs.map(r=>[new Date(r.ts).toLocaleString('sv-SE').slice(0,16),r.t==='e'?'Expense':r.t==='i'?'Income':'Transfer',r.t==='t'?'':nm(cat(r.cat)),nm(acc(r.acc))+(r.t==='t'?' > '+nm(acc(r.to)):''),r.note||'',r.amt].map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(','))).join('\n');
+const toast=m=>{const e=$('#ts');e.textContent=m;e.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>e.hidden=true,4500)};
+const row=r=>{const tr=r.t==='t',c=cat(r.cat),a=acc(r.acc);return`<div class="rw fx" data-a="er:${r.id}">${tr?ic('⇄','#546e7a'):ic(c.icon,c.color)}<div class="mid"><b>${tr?t('tr'):esc(nm(c))}</b>${r.note?`<small>${esc(r.note)}</small>`:''}<em>${a.icon} ${esc(nm(a))}${tr?' → '+acc(r.to).icon+' '+esc(nm(acc(r.to))):''}</em></div><span class="${r.t==='e'?'e':r.t==='i'?'i':''}">${fm(r.amt,r.t==='e'?'-':'')}</span></div>`};
+const V={
+rec(){const rs=inR(mr()).sort((a,b)=>b.ts-a.ts);if(!rs.length)return`<p class="emp">${t('empty')}</p>`;let h='',d='';rs.forEach(r=>{const k=new Date(r.ts).toDateString();if(k!==d){d=k;h+=`<h3>${fd(r.ts)}</h3>`}h+=row(r)});return h},
+ana(){const ty=S.at||'e',rs=inR(mr()).filter(r=>r.t===ty),m={};rs.forEach(r=>m[r.cat]=(m[r.cat]||0)+r.amt);const L=Object.entries(m).sort((a,b)=>b[1]-a[1]),T=L.reduce((s,x)=>s+x[1],0);let h=tb('at',ty);
+if(!T)h+=`<p class="emp">${t('none')}</p>`;else{let a=0;const g=L.map(([id,v])=>{const s=a;a+=v/T*100;return`${cat(id).color} ${s}% ${a}%`}).join(',');
+h+=`<div class="dn" style="background:conic-gradient(${g})"></div>`+L.map(([id,v])=>{const c=cat(id);return`<div class="rw fx" style="cursor:default">${ic(c.icon,c.color)}<div class="mid"><b>${esc(nm(c))}</b><small>${Math.round(v/T*100)}%</small></div><span>${fm(v)}</span></div>`}).join('')}
+const bs=[5,4,3,2,1,0].map(k=>{const m=M-k;return{l:new Date(Math.floor(m/12),m%12,1).toLocaleDateString(loc(),{month:'short'}),...sm(inR(mr(m)))}}),mx=Math.max(1,...bs.flatMap(b=>[b.e,b.i]));
+return h+`<h3>${t('mo')} (<span class="i">${t('inc')}</span> / <span class="e">${t('exp')}</span>)</h3><div class="bars">`+bs.map(b=>`<div class="bc"><div class="pr"><b style="height:${b.i/mx*100}%;background:var(--inc)"></b><b style="height:${b.e/mx*100}%;background:var(--exp)"></b></div><small>${b.l}</small></div>`).join('')+`</div>`},
+bud(){const sp={};inR(mr()).filter(r=>r.t==='e').forEach(r=>sp[r.cat]=(sp[r.cat]||0)+r.amt);return S.cats.filter(c=>c.type==='e').map(c=>{const b=+S.b[c.id]||0,u=sp[c.id]||0,o=b&&u>b;return`<div class="bd" data-a="eb:${c.id}"><div class="fx">${ic(c.icon,c.color)}<div class="mid"><b>${esc(nm(c))}</b><small>${fm(u)} / ${b?fm(b):t('set')}</small></div>${b?`<b class="${o?'e':'i'}">${fm(Math.abs(b-u))} ${o?t('over'):t('left')}</b>`:''}</div>${b?`<div class="pg"><i style="width:${Math.min(100,u/b*100)}%;background:${o?'var(--exp)':c.color}"></i></div>`:''}</div>`}).join('')},
+acc(){const x=S.accounts.reduce((s,a)=>s+bal(a),0);return`<p class="big">${t('total')}: <b class="${x<0?'e':'i'}">${fm(Math.abs(x),x<0?'-':'')}</b></p>`+S.accounts.map(a=>{const b=bal(a);return`<div class="rw fx" data-a="ea:${a.id}">${ic(a.icon,'var(--acc)')}<div class="mid"><b>${esc(nm(a))}</b><small>${t('bal')}</small></div><span class="${b<0?'e':'i'}">${fm(Math.abs(b),b<0?'-':'')}</span></div>`}).join('')},
+cat(){const ty=S.ct||'e';return tb('ct',ty)+S.cats.filter(c=>c.type===ty).map(c=>`<div class="rw fx" data-a="ec:${c.id}">${ic(c.icon,c.color)}<div class="mid"><b>${esc(nm(c))}</b></div></div>`).join('')},
+rep(){const rs=repRecs(),s=sm(rs),m={};rs.filter(r=>r.t==='e').forEach(r=>m[r.cat]=(m[r.cat]||0)+r.amt);const L=Object.entries(m).sort((a,b)=>b[1]-a[1]);
+return`<div class="noprint" style="margin-top:14px"><div class="two"><label><span>${t('from')}</span><input type="date" id="rf" value="${rp.f}"></label><label><span>${t('to')}</span><input type="date" id="rt" value="${rp.t}"></label></div><div class="row"><button class="p" data-a="pdf">⬇ ${t('pdf')}</button><button class="g" data-a="print">🖨️ ${t('print')}</button></div><div class="row"><button class="g" data-a="csv">⬇ ${t('csv')}</button><button class="g" data-a="copy">${t('copy')}</button></div></div>
+<section class="rpt"><h1 class="logo">${S.lang==='bn'?'হিসাব':'Hishab'}</h1><p>${t('stmt')}: ${ft(new Date(rp.f+'T00:00'))} – ${ft(new Date(rp.t+'T00:00'))}</p>${sumH(s)}
+<h3>${t('exp')} – ${t('category')}</h3><div class="tw"><table>${L.map(([id,v])=>`<tr><td>${cat(id).icon} ${esc(nm(cat(id)))}</td><td>${s.e?Math.round(v/s.e*100):0}%</td><td>${fm(v)}</td></tr>`).join('')}</table></div>
+<h3>${t('acc')}</h3><div class="tw"><table>${S.accounts.map(a=>`<tr><td>${a.icon} ${esc(nm(a))}</td><td>${fm(bal(a))}</td></tr>`).join('')}</table></div>
+<h3>${t('tx')} (${rs.length})</h3><div class="tw"><table>${rs.map(r=>`<tr><td>${ft(r.ts)}</td><td>${r.t==='t'?t('tr'):esc(nm(cat(r.cat)))}${r.note?'<br><small>'+esc(r.note)+'</small>':''}</td><td class="${r.t==='e'?'e':r.t==='i'?'i':''}">${fm(r.amt,r.t==='e'?'-':'')}</td></tr>`).join('')}</table></div></section>`}};
+const TABS=[['rec','🧾'],['ana','📊'],['bud','🧮'],['acc','👛'],['cat','🏷️'],['rep','📄']];
+function R(){document.documentElement.lang=S.lang;document.documentElement.dataset.theme=S.theme||'light';const sh=['rec','ana','bud'].includes(tab);
+$('#mn').innerHTML=sh?`<div class="mb"><button data-a="pm" aria-label="Previous">‹</button><b>${ml()}</b><button data-a="nx" aria-label="Next">›</button></div>`+sumH(sm(inR(mr()))):'';
+$('#lg').textContent=S.lang==='bn'?'EN':'বাং';$('#th').textContent=S.theme==='dark'?'☀️':'🌙';$('#lgo').textContent=S.lang==='bn'?'হিসাব':'Hishab';$('#v').innerHTML=V[tab]();
+$('#nv').innerHTML=TABS.map(([k,i])=>`<button data-a="tab:${k}" class="${k===tab?'on':''}"><span>${i}</span><br>${t(k)}</button>`).join('');
+$('#fab').hidden=!['rec','acc','cat'].includes(tab);
+if(tab==='rep'){$('#rf').onchange=e=>{rp.f=e.target.value;R()};$('#rt').onchange=e=>{rp.t=e.target.value;R()}}}
+const inp=(x,v)=>x.ty==='sel'?`<select data-k="${x.k}">${x.o.map(([k,l])=>`<option value="${esc(k)}" ${v[x.k]===k?'selected':''}>${esc(l)}</option>`).join('')}</select>`:x.ty==='area'?`<textarea rows="2" data-k="${x.k}">${esc(v[x.k])}</textarea>`:`<input data-k="${x.k}" type="${x.ty==='txt'||x.ty==='num'?'text':x.ty}" ${x.ty==='num'?'inputmode="decimal"':''} value="${esc(v[x.k])}">${x.ty==='num'?'<div class="tabs"><button type="button" data-op="+">+</button><button type="button" data-op="-">−</button><button type="button" data-op="*">×</button><button type="button" data-op="/">÷</button></div>':''}`;
+function form(ti,f,sv2,del,v={}){const o=$('#m');o.hidden=false;const close=()=>{o.hidden=true;o.innerHTML=''};
+const draw=()=>{const fs=f(v);o.innerHTML=`<div class="sheet"><h2>${ti}</h2>`+fs.map(x=>x.ty==='tabs'?`<div class="tabs">${x.o.map(([k,l])=>`<button type="button" data-k="${x.k}" data-v="${k}" class="${v[x.k]===k?'on':''}">${l}</button>`).join('')}</div>`:`<label><span>${x.l}</span>${inp(x,v)}</label>`).join('')+`<div class="row"><button class="g" data-c>${t('cancel')}</button>${del?`<button class="dng" data-d>${t('del')}</button>`:''}<button class="p" data-s>${t('save')}</button></div></div>`;
+o.querySelectorAll('button[data-k]').forEach(b=>b.onclick=()=>{v[b.dataset.k]=b.dataset.v;draw()});
+o.querySelectorAll('input[data-k],select[data-k],textarea[data-k]').forEach(e=>{e.oninput=e.onchange=()=>{v[e.dataset.k]=e.value};if(e.tagName==='SELECT'&&!v[e.dataset.k])v[e.dataset.k]=e.value});
+o.querySelectorAll('[data-op]').forEach(b=>b.onclick=()=>{const i=b.closest('label').querySelector('input');i.value+=b.dataset.op;v[i.dataset.k]=i.value;i.focus()});o.querySelector('[data-c]').onclick=close;const d=o.querySelector('[data-d]');if(d)d.onclick=()=>{if(del()===false)return;sv();close();R()};
+o.querySelector('[data-s]').onclick=()=>{const er=sv2(v);if(er)return toast(er);sv();close();R()}};draw()}
+const up=(a,o)=>{const i=a.findIndex(x=>x.id===o.id);i<0?a.push(o):a[i]=o};
+function recForm(r){const v=r?{...r,ts:lt(r.ts),amt:String(r.amt),note:r.note||''}:{t:'e',acc:S.accounts[0].id,to:(S.accounts[1]||S.accounts[0]).id,cat:'',note:'',amt:'',ts:lt(Date.now())};
+form(r?t('edit'):t('add'),v=>{const cs=S.cats.filter(c=>c.type===v.t);if(v.t!=='t'&&!cs.find(c=>c.id===v.cat))v.cat=cs[0]&&cs[0].id;const ac=S.accounts.map(a=>[a.id,a.icon+' '+nm(a)]);
+return[{k:'t',ty:'tabs',o:[['e',t('exp')],['i',t('inc')],['t',t('tr')]]},{k:'acc',l:v.t==='t'?t('from'):t('account'),ty:'sel',o:ac},v.t==='t'?{k:'to',l:t('to'),ty:'sel',o:ac}:{k:'cat',l:t('category'),ty:'sel',o:cs.map(c=>[c.id,c.icon+' '+nm(c)])},{k:'note',l:t('note'),ty:'area'},{k:'amt',l:t('amt'),ty:'num'},{k:'ts',l:t('date'),ty:'datetime-local'}]},
+v=>{const a=ev(v.amt),ts=new Date(v.ts).getTime();if(!(a>0)||isNaN(ts))return t('bad');up(S.recs,{id:v.id||'r'+Date.now(),t:v.t,acc:v.acc,to:v.t==='t'?v.to:undefined,cat:v.t==='t'?undefined:v.cat,note:v.note.trim(),amt:a,ts})},
+r&&(()=>{S.recs=S.recs.filter(x=>x.id!==r.id)}),v)}
+function accForm(a){const v=a?{id:a.id,name:nm(a),icon:a.icon,ob:String(a.ob||0)}:{name:'',icon:'👛',ob:'0'};
+form(a?t('edit'):t('addAcc'),()=>[{k:'name',l:t('name'),ty:'txt'},{k:'icon',l:t('icon'),ty:'txt'},{k:'ob',l:t('opening'),ty:'num'}],v=>{if(!v.name.trim())return t('bad');up(S.accounts,{id:v.id||'a'+Date.now(),name:v.name.trim(),icon:v.icon||'👛',ob:ev(v.ob)||0})},
+a&&(()=>{if(S.accounts.length<2||S.recs.some(r=>r.acc===a.id||r.to===a.id)){toast(t('used'));return false}S.accounts=S.accounts.filter(x=>x.id!==a.id)}),v)}
+function catForm(c){const v=c?{id:c.id,name:nm(c),icon:c.icon,color:c.color,type:c.type}:{name:'',icon:'🏷️',color:'#6a1b9a',type:S.ct||'e'};
+form(c?t('edit'):t('addCat'),v=>[...(c?[]:[{k:'type',ty:'tabs',o:[['e',t('exp')],['i',t('inc')]]}]),{k:'name',l:t('name'),ty:'txt'},{k:'icon',l:t('icon'),ty:'txt'},{k:'color',l:t('color'),ty:'color'}],v=>{if(!v.name.trim())return t('bad');up(S.cats,{id:v.id||'c'+Date.now(),name:v.name.trim(),icon:v.icon||'🏷️',color:v.color,type:v.type})},
+c&&(()=>{if(S.recs.some(r=>r.cat===c.id)){toast(t('used'));return false}S.cats=S.cats.filter(x=>x.id!==c.id);delete S.b[c.id]}),v)}
+function budForm(id){const c=cat(id);form(t('bud1')+': '+nm(c),()=>[{k:'b',l:t('amt'),ty:'num'}],v=>{const a=v.b===''?0:ev(v.b);if(isNaN(a)||a<0)return t('bad');S.b[id]=a},null,{b:S.b[id]?String(S.b[id]):''})}
+const dlf=async(name,data)=>{try{const d=window.claude&&await claude.use('downloads');if(!d){const u=URL.createObjectURL(data instanceof Blob?data:new Blob([data]));const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),9e3);return toast(t('nodl'))}await d.save({filename:name,data});toast('✓')}catch(e){if(!e||e.code!=='declined')toast('✗ '+((e&&e.code)||''))}};
+async function mkpdf(){toast(t('wait'));const w=document.createElement('div');w.id='pdfw';w.style.cssText='position:fixed;left:-9999px;top:0;width:794px;padding:28px;background:#fff;color:#000;--bg:#fff;--ink:#000;--card:#fff;--line:#999;--mut:#444;--exp:#b00020;--inc:#1b5e20;--acc:#000';w.innerHTML=document.querySelector('.rpt').innerHTML;document.body.appendChild(w);
+try{const cv=await html2canvas(w,{scale:2.5,backgroundColor:'#fff',onclone:d=>{d.getElementById('pdfw').style.left='0'}});const p=new window.jspdf.jsPDF('p','mm','a4'),iw=190,pw=cv.width/iw,sh=Math.floor(277*pw);
+for(let y=0,n=0;y<cv.height;y+=sh,n++){const c=document.createElement('canvas');c.width=cv.width;c.height=Math.min(sh,cv.height-y);c.getContext('2d').drawImage(cv,0,y,cv.width,c.height,0,0,cv.width,c.height);if(n)p.addPage();p.addImage(c.toDataURL('image/png'),'PNG',10,10,iw,c.height/pw)}
+await dlf('hishab-'+rp.f+'_'+rp.t+'.pdf',p.output('blob'))}catch(e){toast('✗ PDF')}finally{w.remove()}}
+const A={tab:x=>{tab=x;R();scrollTo(0,0)},pm:()=>{M--;R()},nx:()=>{M++;R()},lang:()=>{S.lang=S.lang==='bn'?'en':'bn';sv();R()},theme:()=>{S.theme=S.theme==='dark'?'light':'dark';sv();R()},add:()=>tab==='acc'?accForm():tab==='cat'?catForm():recForm(),
+er:x=>recForm(S.recs.find(r=>r.id===x)),ea:x=>accForm(S.accounts.find(a=>a.id===x)),ec:x=>catForm(S.cats.find(c=>c.id===x)),eb:budForm,at:x=>{S.at=x;sv();R()},ct:x=>{S.ct=x;sv();R()},print:()=>window.print(),
+pdf:mkpdf,csv:()=>dlf('hishab-'+rp.f+'_'+rp.t+'.csv',csv(repRecs())),
+copy:()=>{try{navigator.clipboard.writeText(csv(repRecs())).then(()=>toast('✓'),()=>toast('✗'))}catch(e){toast('✗')}}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const[a,...x]=b.dataset.a.split(':');A[a](x.join(':'))});
+R();
+</script></body></html>
