@@ -364,3 +364,5 @@ input[type="search"]{background-image:url("data:image/svg+xml,%3Csvg xmlns='http
 #pdfw td.e{color:#b00020}#pdfw td.i{color:#1b5e20}
 /* browser print */
 @media print{body{font-size:12pt}.rpt{font-size:12pt}.rpt h1.logo{font-size:26pt}.rpt h3{font-size:15pt;margin:18pt 0 4pt;break-after:avoid;border-bottom:1.5pt solid #999;padding-bottom:3pt}.rpt table{font-size:11.5pt;margin-top:0}.rpt td{padding:6pt 4pt;border-bottom:.6pt solid #aaa}.rpt table.tx td:first-child{white-space:nowrap;width:1%;padding-right:8pt}.rpt table.tx small{display:block;color:#444;font-size:10.5pt}.rpt table.ct td:last-child,.rpt table.tx td:last-child{font-weight:700;white-space:nowrap}.rpt .sum{font-size:12pt;box-shadow:none;border:1pt solid #999;break-inside:avoid}.rpt h3,.rpt .sum{break-inside:avoid}}
+
+.lnf{font-size:26px;display:grid;place-items:center}.lnf[hidden]{display:none}
