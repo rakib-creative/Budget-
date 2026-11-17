@@ -17,13 +17,13 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-<link rel="stylesheet" href="style.css?v=34"><link rel="stylesheet" href="desktop.css?v=3" media="(min-width:1000px)"></head><body>
+<link rel="stylesheet" href="style.css?v=35"><link rel="stylesheet" href="desktop.css?v=3" media="(min-width:1000px)"></head><body>
 <header><div class="top"><span class="logo" id="lgo"></span><span class="fx" style="gap:8px"><button id="li" class="lb" data-a="login" aria-label="Login" hidden><svg class="hi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9z"/></svg> Login</button><button id="us" class="lb" data-a="out" aria-label="Account" hidden></button><button id="nbell" class="lb" data-a="ntf" aria-label="Notifications" hidden><svg class="hi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><i id="nbc" hidden></i></button><button id="st" class="lb" data-a="set" aria-label="Settings"><svg class="hi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></button></span></div><div id="mn"></div></header>
 <div id="sq" class="sq" hidden><div id="dd" class="dd" hidden><button id="ddb" class="lb ddb" data-a="ddt" aria-haspopup="true"></button><div id="ddm" class="ddm" hidden></div></div><input id="qi" type="search" autocomplete="off"><button id="fb" class="lb fbt" data-a="flt" aria-label="Filter"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg></button></div>
 <main id="v"></main>
 <button id="fab" class="fab" data-a="add" aria-label="Add">+</button>
-<button id="svq" class="fab svq" data-a="svopen" aria-label="Savings" hidden>💰</button>
-<button id="lnq" class="lnq" data-a="lnopen" aria-label="Loans" hidden>🤝</button>
+<button id="svq" class="lnq" data-a="svopen" aria-label="Savings" hidden>💰</button>
+<button id="lnq" class="fab lnf" data-a="lnopen" aria-label="Loans" hidden>🤝</button>
 <button id="aib" class="fab aib" hidden aria-label="AI chat"></button>
 <div id="ai" class="ai" hidden><div class="ais" role="dialog" aria-modal="true"><div id="aik" hidden></div><div id="aic" hidden></div></div></div>
 <nav class="bn" id="nv"></nav>
@@ -35,4 +35,4 @@
 <button id="gb" class="gb" data-a="glogin" hidden><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.9-6.1C.9 16.4 0 20.1 0 24s.9 7.6 2.6 10.8l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg><span>Google দিয়ে লগইন / Sign in with Google</span></button>
 <button id="gs" class="gb" data-a="guest" style="background:none;color:var(--ink);box-shadow:none;margin-top:0" hidden><span>লগইন ছাড়া ব্যবহার করুন / Continue without login</span></button>
 </div>
-<script src="app.js?v=48"></script></body></html>
+<script src="app.js?v=49"></script></body></html>
