@@ -368,7 +368,7 @@ const FAQ=[
 ]],
 ['Auto entries','অটো এন্ট্রি',[
 ['What are auto entries?','Auto entries add an income, expense, transfer or savings deposit for you on a date you choose, again and again. For example, your salary on the 1st of every month, rent on the 5th, or a weekly savings deposit. You set it once and the app adds the entry for you.','অটো এন্ট্রি কী?','অটো এন্ট্রি আপনার বেছে নেওয়া তারিখে আয়, খরচ, ট্রান্সফার বা সঞ্চয় বারবার নিজে নিজে যোগ করে। যেমন প্রতি মাসের ১ তারিখে বেতন, ৫ তারিখে ভাড়া বা প্রতি সপ্তাহে সঞ্চয়। একবার ঠিক করলেই অ্যাপ নিজে এন্ট্রি যোগ করবে।'],
-['How do I set one up?','Two ways. (1) Go to Settings → Auto entries → “New auto entry”, choose income, expense, transfer or savings, fill in the amount, wallet and category, pick how often (every day, week, 2 weeks, month or year) and the date, then Save. (2) When you add a normal entry, tap the 🔁 button under the date and choose how it repeats. That entry becomes the first one and the next ones follow.','কীভাবে ঠিক করব?','দুইভাবে। (১) সেটিংস → অটো এন্ট্রি → “নতুন অটো এন্ট্রি” চাপুন, আয়, খরচ, ট্রান্সফার বা সঞ্চয় বাছুন, পরিমাণ, ওয়ালেট ও ক্যাটাগরি দিন, কত পর পর (প্রতিদিন, সপ্তাহ, ২ সপ্তাহ, মাস বা বছর) ও তারিখ বাছুন, তারপর সেভ করুন। (২) সাধারণ এন্ট্রি যোগ করার সময় তারিখের নিচের 🔁 বাটন চেপে কত পর পর হবে তা বাছুন। ওই এন্ট্রিটিই প্রথম এন্ট্রি হবে, পরেরগুলো নিজে নিজে আসবে।'],
+['How do I set one up?','Two ways. (1) Go to Settings → Auto entries → “New auto entry”, choose income, expense, transfer or savings, fill in the amount, wallet and category, pick how often (every day, week, 2 weeks, month or year) and the date, then Save. For “Every day” you can switch off the days you do not want, such as your weekend, so nothing is added on those days. (2) When you add a normal entry, tap the 🔁 button under the date and choose how it repeats. That entry becomes the first one and the next ones follow.','কীভাবে ঠিক করব?','দুইভাবে। (১) সেটিংস → অটো এন্ট্রি → “নতুন অটো এন্ট্রি” চাপুন, আয়, খরচ, ট্রান্সফার বা সঞ্চয় বাছুন, পরিমাণ, ওয়ালেট ও ক্যাটাগরি দিন, কত পর পর (প্রতিদিন, সপ্তাহ, ২ সপ্তাহ, মাস বা বছর) ও তারিখ বাছুন, তারপর সেভ করুন। “প্রতিদিন” বাছলে যে দিনগুলো চান না, যেমন সাপ্তাহিক ছুটি, সেগুলো বন্ধ করে দিতে পারবেন, ওই দিনে কিছু যোগ হবে না। (২) সাধারণ এন্ট্রি যোগ করার সময় তারিখের নিচের 🔁 বাটন চেপে কত পর পর হবে তা বাছুন। ওই এন্ট্রিটিই প্রথম এন্ট্রি হবে, পরেরগুলো নিজে নিজে আসবে।'],
 ['When exactly is the entry added? What if the app was closed?','The app adds entries when you open it on or after the chosen date (and about once a minute while it is open). It cannot add anything while it is closed. If you were away, the dates you missed are all added the next time you open it, each with its own date, so your records stay right. When a repeat is set for the 29th, 30th or 31st and a month is shorter, it is added on the last day of that month.','কখন এন্ট্রি যোগ হয়? অ্যাপ বন্ধ থাকলে কী হয়?','বেছে নেওয়া তারিখে বা তার পরে অ্যাপ খুললে (এবং খোলা থাকলে প্রায় প্রতি মিনিটে) অ্যাপ এন্ট্রি যোগ করে। অ্যাপ বন্ধ থাকলে কিছুই যোগ হতে পারে না। আপনি না থাকলে মিস হওয়া সব তারিখ পরের বার খুললে একসাথে, নিজ নিজ তারিখে যোগ হয়ে যায়, তাই হিসাব ঠিক থাকে। ২৯, ৩০ বা ৩১ তারিখ বাছলে কোনো মাস ছোট হলে সেই মাসের শেষ দিনে যোগ হয়।'],
 ['How do I change, pause, skip or stop an auto entry?','Open Settings → Auto entries and tap the one you want. You can edit the amount, wallet, category, how often and the dates; Pause it (and Resume later, without adding the paused days); Skip only the next date; or Delete it. You can also set an end date so it stops by itself. Entries that were already added stay in your records.','অটো এন্ট্রি বদলানো, থামানো, বাদ দেওয়া বা বন্ধ করা যায়?','সেটিংস → অটো এন্ট্রিতে গিয়ে যেটি চান সেটিতে চাপুন। পরিমাণ, ওয়ালেট, ক্যাটাগরি, কত পর পর ও তারিখ বদলাতে পারবেন; থামাতে পারবেন (পরে আবার চালু করলে থামানো দিনগুলো যোগ হবে না); শুধু পরের তারিখটি বাদ দিতে পারবেন; বা মুছে দিতে পারবেন। শেষ তারিখ দিলে নিজে থেকেই বন্ধ হয়ে যাবে। আগে যোগ হওয়া এন্ট্রি আপনার রেকর্ডে থেকে যায়।'],
 ['Will an entry be added twice? What if I delete or edit one?','No. Each date of an auto entry is added only once, even on two devices, and an entry you delete is not added again. Auto entries are marked with 🔁. Editing or deleting one entry changes only that entry, not the rule; change the rule in Settings → Auto entries.','এন্ট্রি দুইবার যোগ হবে না তো? একটা মুছলে বা বদলালে কী হয়?','না। অটো এন্ট্রির প্রতিটি তারিখ শুধু একবারই যোগ হয়, দুই ডিভাইসে খুললেও, আর মুছে ফেলা এন্ট্রি আবার যোগ হয় না। অটো এন্ট্রিতে 🔁 চিহ্ন থাকে। একটি এন্ট্রি বদলালে বা মুছলে শুধু সেটিই বদলায়, নিয়ম নয়; নিয়ম বদলাতে সেটিংস → অটো এন্ট্রিতে যান।'],
@@ -1385,35 +1385,37 @@ else{lastExit=n;toastMsg();try{history.pushState({app:1},'')}catch(x){}}});
 const AL=(e,b)=>S.lang==='bn'?b:e,nn=x=>Number(x).toLocaleString(loc()),AR=()=>S.ar||(S.ar=[]);
 const dim=(y,m)=>new Date(y,m+1,0).getDate(),at=(y,m,d)=>new Date(y,m,Math.min(d,dim(y,m))).getTime(),dy=r=>r.day===0?31:r.day;
 /* first date on or after "from" that fits the rule */
+const okd=(r,t)=>!r.dl||r.dl.length===0||r.dl.length>=7||r.dl.indexOf(new Date(t).getDay())>=0,nd=(r,x)=>{let g=0;do{x=addD(x,1);g++}while(!okd(r,x)&&g<8);return x};
 const fst=(r,from)=>{const f=D0(from),s=new Date(f),y=s.getFullYear(),m=s.getMonth();
-if(r.f==='d')return f;
+if(r.f==='d'){let x=f,g=0;while(!okd(r,x)&&g<8){x=addD(x,1);g++}return x}
 if(r.f==='w'||r.f==='b')return addD(f,(r.dow-s.getDay()+7)%7);
 if(r.f==='m'){let x=at(y,m,dy(r));if(x<f)x=at(y,m+1,dy(r));return x}
 let x=at(y,r.mo,dy(r));if(x<f)x=at(y+1,r.mo,dy(r));return x};
 /* the date after x */
 const adv=(r,x)=>{const d=new Date(x);
-if(r.f==='d')return addD(x,1);if(r.f==='w')return addD(x,7);if(r.f==='b')return addD(x,14);
+if(r.f==='d')return nd(r,x);if(r.f==='w')return addD(x,7);if(r.f==='b')return addD(x,14);
 if(r.f==='m')return at(d.getFullYear(),d.getMonth()+1,dy(r));
 return at(d.getFullYear()+1,r.mo,dy(r))};
+const tmo=r=>r.tm==null?0:r.tm*6e4,hm2=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0'),tstr=m=>new Date(2024,0,1,Math.floor(m/60),m%60).toLocaleTimeString(loc(),{hour:'numeric',minute:'2-digit'}),dueT=(r,x)=>x+tmo(r)<=Date.now();
 const ok=r=>S.accounts.some(a=>a.id===r.acc)&&(r.t==='t'?(S.accounts.some(a=>a.id===r.to)&&r.to!==r.acc):r.t==='s'?true:S.cats.some(c=>c.id===r.cat&&c.type===r.t));
-const mk=(r,x)=>{const rec={id:'ar'+r.id+'_'+d2(x).replace(/-/g,''),t:r.t==='s'?'e':r.t,acc:r.acc,amt:r.amt,ts:Math.min(x+9*36e5,Date.now()),note:r.note||'',ar:r.id};
+const mk=(r,x)=>{const rec={id:'ar'+r.id+'_'+d2(x).replace(/-/g,''),t:r.t==='s'?'e':r.t,acc:r.acc,amt:r.amt,ts:r.tm==null?Math.min(x+9*36e5,Date.now()):Math.min(x+tmo(r),Date.now()),note:r.note||'',ar:r.id};
 if(r.t==='t')rec.to=r.to;else if(r.t==='s'){rec.cat='svd';rec.sv=1}else rec.cat=r.cat;return rec};
 const done=r=>!!(r.done||(r.end&&r.nx>r.end));
 const title=r=>r.t==='t'?AL('Transfer','ট্রান্সফার'):r.t==='s'?AL('Savings deposit','সঞ্চয় জমা'):nm(cat(r.cat));
 /* add everything that has come due (also dates missed while the app was closed) */
-function run(){if(U&&first)return 0;const rs=AR(),today=D0(Date.now());if(!rs.some(r=>r.on&&r.nx&&r.nx<=today))return 0;
+function run(){if(U&&first)return 0;const rs=AR(),today=D0(Date.now());if(!rs.some(r=>r.on&&r.nx&&dueT(r,r.nx)))return 0;
 const have=new Set(S.recs.map(x=>x.id)),gone=new Set((S.bin||[]).filter(b=>b&&b.k==='r'&&b.d).map(b=>b.d.id));let made=0,chg=0;const who=[];
-rs.forEach(r=>{if(!r.on||!r.nx||r.nx>today)return;
+rs.forEach(r=>{if(!r.on||!r.nx||!dueT(r,r.nx))return;
 if(!ok(r)){r.on=false;r.bad=1;chg=1;return}
-let g=0;while(r.nx<=today&&g<400){if(r.end&&r.nx>r.end)break;const rec=mk(r,r.nx);if(!have.has(rec.id)&&!gone.has(rec.id)){S.recs.push(rec);have.add(rec.id);made++;who.push(r)}r.last=r.nx;r.n=(r.n||0)+1;r.nx=adv(r,r.nx);g++;chg=1}
+let g=0;while(dueT(r,r.nx)&&g<400){if(r.end&&r.nx>r.end)break;const rec=mk(r,r.nx);if(!have.has(rec.id)&&!gone.has(rec.id)){S.recs.push(rec);have.add(rec.id);made++;who.push(r)}r.last=r.nx;r.n=(r.n||0)+1;r.nx=adv(r,r.nx);g++;chg=1}
 if(r.end&&r.nx>r.end){r.on=false;r.done=1;chg=1}});
 if(chg)sv();window.__arNew=made?who:null;return made}
 const PM={d:30.44,w:4.345,b:2.1725,m:1,y:1/12};
-const est=()=>{let i=0,e=0;AR().forEach(r=>{if(!r.on||r.bad||done(r))return;const v=r.amt*PM[r.f];if(r.t==='i')i+=v;else if(r.t==='e')e+=v});return{i:r2(i),e:r2(e)}};
+const est=()=>{let i=0,e=0;AR().forEach(r=>{if(!r.on||r.bad||done(r))return;const v=r.amt*PM[r.f]*(r.f==='d'&&r.dl&&r.dl.length&&r.dl.length<7?r.dl.length/7:1);if(r.t==='i')i+=v;else if(r.t==='e')e+=v});return{i:r2(i),e:r2(e)}};
 const ord=n=>n+(['th','st','nd','rd'][(n%100>10&&n%100<14)?0:(n%10<4?n%10:0)]);
-const WD=()=>S.lang==='bn'?[6,0,1,2,3,4,5]:[1,2,3,4,5,6,0],wd=i=>df(new Date(2024,0,7+i),{weekday:'long'}),mo=i=>df(new Date(2024,i,1),{month:'long'});
+const WD=()=>S.lang==='bn'?[6,0,1,2,3,4,5]:[1,2,3,4,5,6,0],wd=i=>df(new Date(2024,0,7+i),{weekday:'long'}),sd=i=>df(new Date(2024,0,7+i),{weekday:'short'}),mo=i=>df(new Date(2024,i,1),{month:'long'});
 function sched(r){const bn=S.lang==='bn',d=r.day;
-if(r.f==='d')return AL('Every day','প্রতিদিন');
+if(r.f==='d'){const l=r.dl&&r.dl.length&&r.dl.length<7?r.dl.slice().sort((a,b)=>a-b):null;if(!l)return AL('Every day','প্রতিদিন');const k=l.join('');if(k==='12345')return AL('Every weekday (Mon–Fri)','প্রতি কর্মদিবসে (সোম–শুক্র)');if(k==='01234')return AL('Every Sun–Thu','প্রতি রবি–বৃহস্পতি');const o=WD().filter(i=>l.indexOf(i)>=0);return AL('Every '+o.map(sd).join(', '),'প্রতি '+o.map(sd).join(', '))}
 if(r.f==='w')return AL('Every '+wd(r.dow),'প্রতি '+wd(r.dow));
 if(r.f==='b')return AL('Every 2 weeks on '+wd(r.dow),'প্রতি ২ সপ্তাহে '+wd(r.dow));
 if(r.f==='m')return d===0?AL('Every month on the last day','প্রতি মাসের শেষ দিনে'):bn?'প্রতি মাসের '+nn(d)+' তারিখে':'Every month on the '+ord(d);
@@ -1423,10 +1425,10 @@ const ico=r=>r.t==='t'?ic('⇄','#546e7a'):r.t==='s'?ic('💰','#00897b'):(()=>{
 /* ---- manage page ---- */
 function sheet(){const o=$('#m'),keep=(cs===sheet&&!o.hidden&&o.firstElementChild)?o.firstElementChild.scrollTop:0;cs=sheet;back=openSet;o.hidden=false;
 const rs=AR().slice().sort((a,b)=>((+!!b.on&&!done(b))-(+!!a.on&&!done(a)))||((a.nx||0)-(b.nx||0))),E=est(),act=rs.filter(r=>r.on&&!done(r)),ina=rs.filter(r=>!(r.on&&!done(r)));
-const row=r=>{const st=r.bad?'<span class="ar-st w">⚠️ '+AL('Paused: wallet or category was deleted. Tap to fix.','থেমে আছে: ওয়ালেট বা ক্যাটাগরি মুছে গেছে। ঠিক করতে চাপুন।')+'</span>':done(r)?'<span class="ar-st">✔ '+AL('Finished','শেষ হয়েছে')+'</span>':!r.on?'<span class="ar-st">⏸ '+AL('Paused','থামানো')+'</span>':'<span class="ar-st n">'+AL('Next: ','পরের: ')+dstr(r.nx)+'</span>';
-const k=r.t==='i'?'i':r.t==='t'?'':'e';return`<div class="sv-r${r.on&&!done(r)?'':' ar-off'}" data-a="are:${esc(r.id)}">${ico(r)}<div class="sv-m"><b>${esc(title(r))}${r.note?' · '+esc(r.note):''}</b><small>${esc(sched(r))}</small>${st}</div><b class="${k}">${r.t==='i'?'+':r.t==='t'?'':'−'}${fm(r.amt)}</b></div>`};
+const row=r=>{const st=r.bad?'<span class="ar-st w">⚠️ '+AL('Paused: wallet or category was deleted. Tap to fix.','থেমে আছে: ওয়ালেট বা ক্যাটাগরি মুছে গেছে। ঠিক করতে চাপুন।')+'</span>':done(r)?'<span class="ar-st">✔ '+AL('Finished','শেষ হয়েছে')+'</span>':!r.on?'<span class="ar-st">⏸ '+AL('Paused','থামানো')+'</span>':'<span class="ar-st n">'+AL('Next: ','পরের: ')+dstr(r.nx)+(r.tm==null?'':', '+tstr(r.tm))+'</span>';
+const k=r.t==='i'?'i':r.t==='t'?'':'e';return`<div class="sv-r${r.on&&!done(r)?'':' ar-off'}" data-a="are:${esc(r.id)}">${ico(r)}<div class="sv-m"><b>${esc(title(r))}${r.note?' · '+esc(r.note):''}</b><small>${esc(sched(r))}${r.tm==null?'':' · '+esc(tstr(r.tm))}</small>${st}</div><b class="${k}">${r.t==='i'?'+':r.t==='t'?'':'−'}${fm(r.amt)}</b></div>`};
 o.innerHTML=`<div class="sheet full sv-f"><div class="sh fh"><button type="button" class="xb" data-a="cl" aria-label="Close">✕</button><h2>🔁 ${AL('Auto entries','অটো এন্ট্রি')}</h2></div>
-<p class="fnote" style="text-align:left;margin-top:0">${AL('Set it once and it is added for you on the date you choose, such as your salary every month or rent on the 5th. Entries are added when you open the app on or after that date; dates missed while it was closed are added with their own dates.','একবার ঠিক করুন, তারপর আপনার বেছে নেওয়া তারিখে নিজে নিজে যোগ হবে, যেমন প্রতি মাসের বেতন বা ৫ তারিখের ভাড়া। ওই তারিখে বা তার পরে অ্যাপ খুললে এন্ট্রি যোগ হয়; অ্যাপ বন্ধ থাকলে মিস হওয়া তারিখগুলো নিজ নিজ তারিখে যোগ হয়ে যাবে।')}</p>
+<p class="fnote" style="text-align:left;margin-top:0">${AL('Set it once and it is added for you on the date you choose, such as your salary every month or rent on the 5th. You can also choose the time of day. Entries are added when you open the app on or after that date and time; dates missed while it was closed are added with their own dates.','একবার ঠিক করুন, তারপর আপনার বেছে নেওয়া তারিখে নিজে নিজে যোগ হবে, যেমন প্রতি মাসের বেতন বা ৫ তারিখের ভাড়া। সময়ও বেছে নিতে পারবেন। ওই তারিখ ও সময়ে বা তার পরে অ্যাপ খুললে এন্ট্রি যোগ হয়; অ্যাপ বন্ধ থাকলে মিস হওয়া তারিখগুলো নিজ নিজ তারিখে যোগ হয়ে যাবে।')}</p>
 <div class="row"><button type="button" class="fsv sv-big" data-a="arn">＋ ${AL('New auto entry','নতুন অটো এন্ট্রি')}</button></div>
 ${act.length&&(E.i||E.e)?`<div class="ar-sum"><small>${AL('Roughly per month (active ones)','মাসে মোটামুটি (চালুগুলো)')}</small><div>${E.i?`<span class="i">＋${fm(E.i)}</span>`:''}${E.e?`<span class="e">−${fm(E.e)}</span>`:''}</div></div>`:''}
 ${rs.length?'':`<p class="emp">🔁 ${AL('No auto entries yet. Tap “New auto entry”, or tap 🔁 Repeat when you add an entry.','এখনো কোনো অটো এন্ট্রি নেই। “নতুন অটো এন্ট্রি” চাপুন, অথবা এন্ট্রি যোগ করার সময় 🔁 পুনরাবৃত্তি চাপুন।')}</p>`}
@@ -1435,14 +1437,14 @@ ${ina.length?`<div class="sv-dh">${AL('Paused or finished','থামানো �
 o.firstElementChild.scrollTop=keep}
 /* ---- add / edit form ---- */
 let G=null;
-const newG=()=>{const d=new Date();return{t:'i',amt:'',acc:'',to:'',cat:'',note:'',f:'m',day:d.getDate()>=29?0:d.getDate(),dow:d.getDay(),mo:d.getMonth(),start:d2(Date.now()),end:''}};
-const fromR=r=>({id:r.id,t:r.t,amt:String(r.amt),acc:r.acc,to:r.to||'',cat:r.cat||'',note:r.note||'',f:r.f,day:r.day,dow:r.dow,mo:r.mo,start:d2(r.start),end:r.end?d2(r.end):''});
+const newG=()=>{const d=new Date();return{t:'i',amt:'',acc:'',to:'',cat:'',note:'',f:'m',day:d.getDate()>=29?0:d.getDate(),dow:d.getDay(),mo:d.getMonth(),start:d2(Date.now()),end:'',tm:'09:00',dl:[0,1,2,3,4,5,6]}};
+const fromR=r=>({id:r.id,t:r.t,amt:String(r.amt),acc:r.acc,to:r.to||'',cat:r.cat||'',note:r.note||'',f:r.f,day:r.day,dow:r.dow,mo:r.mo,start:d2(r.start),end:r.end?d2(r.end):'',tm:hm2(r.tm==null?540:r.tm),dl:r.dl&&r.dl.length?r.dl.slice():[0,1,2,3,4,5,6]});
 function grab(){if(!G)return;const g=i=>{const e=$(i);return e?e.value:null};
-const m={'#aram':'amt','#arnt':'note','#arcat':'cat','#arf':'f','#ard':'day','#arw':'dow','#arm':'mo','#ars':'start','#are':'end'};
+const m={'#aram':'amt','#arnt':'note','#arcat':'cat','#arf':'f','#ard':'day','#arw':'dow','#arm':'mo','#ars':'start','#are':'end','#artm':'tm'};
 for(const k in m){const v=g(k);if(v!==null)G[m[k]]=v}
 G.day=+G.day;G.dow=+G.dow;G.mo=+G.mo}
-const tmp=()=>{const g=G,st=g.start?new Date(g.start+'T00:00:00').getTime():NaN;return isNaN(st)?null:{t:g.t,f:g.f,day:+g.day,dow:+g.dow,mo:+g.mo,start:st,end:g.end?new Date(g.end+'T00:00:00').getTime():0}};
-const dates=(r,from)=>{const out={past:0,next:[]},today=D0(Date.now());let x=fst(r,from),c=0;while(x<=today&&(!r.end||x<=r.end)&&c<400){c++;x=adv(r,x)}out.past=c;for(let i=0;i<3&&(!r.end||x<=r.end);i++){out.next.push(x);x=adv(r,x)}return out};
+const tmp=()=>{const g=G,st=g.start?new Date(g.start+'T00:00:00').getTime():NaN;const tp=/^(\d{1,2}):(\d{2})$/.exec(g.tm||''),tmv=tp?Math.min(1439,+tp[1]*60+ +tp[2]):540;return isNaN(st)?null:{t:g.t,f:g.f,dl:g.dl,tm:tmv,day:+g.day,dow:+g.dow,mo:+g.mo,start:st,end:g.end?new Date(g.end+'T00:00:00').getTime():0}};
+const dates=(r,from)=>{const out={past:0,next:[]},today=D0(Date.now());let x=fst(r,from),c=0;while(dueT(r,x)&&(!r.end||x<=r.end)&&c<400){c++;x=adv(r,x)}out.past=c;for(let i=0;i<3&&(!r.end||x<=r.end);i++){out.next.push(x);x=adv(r,x)}return out};
 function pv(){const e=$('#arpv');if(!e)return;const r=tmp();if(!r){e.textContent='';return}if(r.end&&r.end<r.start){e.textContent='⚠️ '+AL('The end date is before the start date.','শেষের তারিখ শুরুর আগে।');return}
 const x=dates(r,r.start);let s='';if(x.past)s+=AL(nn(x.past)+(x.past>=400?'+':'')+' past date'+(x.past>1?'s':'')+' will be added right away. ',nn(x.past)+(x.past>=400?'+':'')+'টি আগের তারিখ এখনই যোগ হবে। ');
 s+=x.next.length?AL('Next: ','এরপর: ')+x.next.map(dstr).join(' · '):AL('No more dates before the end date.','শেষ তারিখের আগে আর কোনো তারিখ নেই।');e.textContent=s}
@@ -1460,9 +1462,11 @@ o.innerHTML=`<div class="sheet full sv-f ar-f"><div class="sh fh"><button type="
 ${d==='t'?`<span class="sl">${AL('To which wallet?','কোন ওয়ালেটে?')}</span><div class="sv-chs">${chip('arw2','to')}</div>`:d==='s'?'':`<label><span>${AL('Category','ক্যাটাগরি')}</span>${sel('arcat',g.cat,[['',AL('Select a category','ক্যাটাগরি বাছুন')]].concat(cats.map(c=>[c.id,(c.icon||'')+' '+nm(c)])))}</label>`}
 <label><span>${AL('Note (optional)','নোট (ঐচ্ছিক)')}</span><input id="arnt" maxlength="60" autocomplete="off" placeholder="${AL('e.g. Salary, House rent','যেমন: বেতন, বাসা ভাড়া')}" value="${esc(g.note)}"></label>
 <label><span>${AL('Repeat','কতবার পর পর')}</span>${sel('arf',g.f,fo)}</label>
+${g.f==='d'?`<span class="sl">${AL('On which days?','কোন কোন দিন?')}</span><div class="sv-chs ar-dl">${WD().map(i=>`<button type="button" class="sv-ch ${g.dl.indexOf(i)>=0?'on':''}" data-a="ardl:${i}">${esc(sd(i))}</button>`).join('')}</div><div class="sv-chs ar-dp"><button type="button" class="sv-ch" data-a="ardp:all">${AL('All days','সব দিন')}</button><button type="button" class="sv-ch" data-a="ardp:sunthu">${AL('Sun–Thu','রবি–বৃহস্পতি')}</button><button type="button" class="sv-ch" data-a="ardp:monfri">${AL('Mon–Fri','সোম–শুক্র')}</button></div><small class="ar-h">${AL('Turn off the days you do not want, for example your weekend. Nothing is added on those days.','যে দিনগুলো চান না, যেমন আপনার সাপ্তাহিক ছুটি, বন্ধ করে দিন। ওই দিনগুলোতে কিছু যোগ হবে না।')}</small>`:''}
 ${g.f==='m'?`<label><span>${AL('On which day of the month?','মাসের কত তারিখে?')}</span>${sel('ard',g.day,days)}</label><small class="ar-h">${AL('If a month is shorter (for example 31 in April), it is added on the last day of that month.','কোনো মাস ছোট হলে (যেমন এপ্রিলে ৩১) সেই মাসের শেষ দিনে যোগ হবে।')}</small>`:''}
 ${g.f==='w'||g.f==='b'?`<label><span>${AL('On which day of the week?','সপ্তাহের কোন দিন?')}</span>${sel('arw',g.dow,WD().map(i=>[i,wd(i)]))}</label>`:''}
 ${g.f==='y'?`<div class="ar-two"><label><span>${AL('Month','মাস')}</span>${sel('arm',g.mo,Array.from({length:12},(_,i)=>[i,mo(i)]))}</label><label><span>${AL('Day','তারিখ')}</span>${sel('ard',g.day,days)}</label></div>`:''}
+<label><span>${AL('At what time?','কোন সময়ে?')}</span><input type="time" id="artm" value="${esc(g.tm||'09:00')}"></label><small class="ar-h">${AL('The entry gets this time. It is added when the time comes and the app is open; if the app was closed, it is added when you open it, still with this time.','এন্ট্রিটি এই সময়ের হবে। সময় হলে অ্যাপ খোলা থাকলে যোগ হয়; অ্যাপ বন্ধ থাকলে পরে খুললে যোগ হবে, তবে এই সময়ের নামেই।')}</small>
 <div class="ar-two"><label><span>${AL('Starts from','শুরুর তারিখ')}</span><input type="date" id="ars" value="${esc(g.start)}"></label><label><span>${AL('Ends on (optional)','শেষ তারিখ (ঐচ্ছিক)')}</span><input type="date" id="are" value="${esc(g.end)}"></label></div>
 <p class="fnote ar-pv" id="arpv" style="text-align:left"></p>
 ${ed?`<div class="row"><button type="button" class="g" data-a="arpz:${esc(g.id)}">${ex&&ex.on&&!done(ex)?'⏸ '+AL('Pause','থামান'):'▶️ '+AL('Resume','আবার চালু করুন')}</button><button type="button" class="g" data-a="ark:${esc(g.id)}">⏭️ ${AL('Skip next','পরেরটা বাদ দিন')}</button></div><div class="row"><button type="button" class="g" data-a="ard2:${esc(g.id)}" style="color:var(--exp)">🗑️ ${AL('Delete this auto entry','এই অটো এন্ট্রি মুছুন')}</button></div><small class="ar-h">${AL('Deleting or pausing does not remove entries that were already added.','মুছলে বা থামালে আগে যোগ হওয়া এন্ট্রি মুছে যায় না।')}</small>`:''}</div>`;
@@ -1473,15 +1477,17 @@ if(!(a>0))return toast(AL('Enter an amount','পরিমাণ লিখুন'
 if(!g.acc||!S.accounts.some(x=>x.id===g.acc))return toast(g.t==='t'||g.t==='s'||g.t==='e'?AL('Select the wallet the money comes from','কোন ওয়ালেট থেকে টাকা যাবে তা বাছুন'):AL('Select a wallet','ওয়ালেট বাছুন'));
 if(g.t==='t'){if(!g.to||!S.accounts.some(x=>x.id===g.to))return toast(AL('Select the wallet to transfer to','কোন ওয়ালেটে ট্রান্সফার তা বাছুন'));if(g.to===g.acc)return toast(AL('You can’t transfer to the same wallet','একই ওয়ালেটে ট্রান্সফার করা যাবে না'))}
 else if(g.t!=='s'&&!S.cats.some(c=>c.id===g.cat&&c.type===g.t))return toast(AL('Select a category','ক্যাটাগরি বাছুন'));
+if(g.f==='d'&&!(g.dl&&g.dl.length))return toast(AL('Select at least one day','অন্তত একটি দিন বাছুন'));
 const t0=tmp();if(!t0)return toast(AL('Check the start date','শুরুর তারিখ দেখুন'));
 if(g.end&&isNaN(t0.end))return toast(AL('Check the end date','শেষের তারিখ দেখুন'));
 if(t0.end&&t0.end<t0.start)return toast(AL('The end date is before the start date','শেষের তারিখ শুরুর আগে'));
-const r={...(ex||{}),id:g.id||'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,5),t:g.t,amt:r2(a),acc:g.acc,note:(g.note||'').trim().slice(0,60),f:g.f,day:+g.day,dow:+g.dow,mo:+g.mo,start:t0.start,end:t0.end};
+const r={...(ex||{}),id:g.id||'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,5),t:g.t,amt:r2(a),acc:g.acc,note:(g.note||'').trim().slice(0,60),f:g.f,day:+g.day,dow:+g.dow,mo:+g.mo,start:t0.start,end:t0.end,tm:t0.tm};
+if(g.f==='d'&&g.dl.length<7)r.dl=g.dl.slice().sort((a,b)=>a-b);else delete r.dl;
 if(g.t==='t')r.to=g.to;else delete r.to;if(g.t==='t'||g.t==='s')delete r.cat;else r.cat=g.cat;
 r.nx=fst(r,Math.max(t0.start,ex&&ex.last?addD(ex.last,1):0));
 if(r.end&&r.nx>r.end)return toast(AL('There is no date between the start and end date','শুরু ও শেষ তারিখের মধ্যে কোনো তারিখ নেই'));
 const wasOff=ex&&!ex.on&&!ex.bad&&!ex.done;r.on=ex?!wasOff:true;r.bad=0;r.done=0;
-if(r.on){const today=D0(Date.now());let c=0,y=r.nx;while(y<=today&&c<400){c++;y=adv(r,y)}
+if(r.on){let c=0,y=r.nx;while(dueT(r,y)&&c<400){c++;y=adv(r,y)}
 if(c>0&&!confirm(AL(nn(c)+(c>=400?'+':'')+' entr'+(c>1?'ies':'y')+' with past dates (from '+dstr(r.nx)+') will be added now. Continue?',nn(c)+(c>=400?'+':'')+'টি আগের তারিখের এন্ট্রি ('+dstr(r.nx)+' থেকে) এখনই যোগ হবে। চালিয়ে যাবেন?')))return}
 const i=AR().findIndex(z=>z.id===r.id);if(i<0)AR().push(r);else AR()[i]=r;
 G=null;let m=0;try{m=run()}catch(e){}sv();R();sheet();toast('✓ '+(m?AL(nn(m)+' added now','এখনই '+nn(m)+'টি যোগ হয়েছে'):AL('Saved. Next: ','সেভ হয়েছে। পরের: ')+dstr(r.nx)))}
@@ -1490,7 +1496,7 @@ const RL=(f,ts,L)=>{const d=new Date(ts),n=d.getDate(),w=d.toLocaleDateString(lo
 return f==='d'?L('Every day','প্রতিদিন'):f==='w'?L('Every week on '+w,'প্রতি সপ্তাহে '+w):f==='b'?L('Every 2 weeks on '+w,'প্রতি ২ সপ্তাহে '+w):f==='m'?(n>=31?L('Every month on the last day','প্রতি মাসের শেষ দিনে'):bn?'প্রতি মাসের '+nn(n)+' তারিখে':'Every month on the '+ord(n)):L('Every year on '+d.toLocaleDateString(loc(),{day:'numeric',month:'long'}),'প্রতি বছর '+d.toLocaleDateString(loc(),{day:'numeric',month:'long'}))};
 window.arOpts=(ts,L)=>[['-',L('Does not repeat','পুনরাবৃত্তি নেই')]].concat(['d','w','b','m','y'].map(f=>[f,RL(f,ts,L)]));
 window.arChip=(v,L)=>{const sh={d:L('Daily','প্রতিদিন'),w:L('Weekly','সাপ্তাহিক'),b:L('2 weeks','২ সপ্তাহ'),m:L('Monthly','মাসিক'),y:L('Yearly','বার্ষিক')};return`<button type="button" class="rf-rp${v.rp?' on':''}" data-x="rp" aria-label="${L('Repeat','পুনরাবৃত্তি')}"><span>🔁</span><small>${v.rp?sh[v.rp]:L('Repeat','পুনরাবৃত্তি')}</small></button>`};
-window.arMake=(rec,f)=>{const d=new Date(rec.ts),n=d.getDate(),r={id:'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,5),t:rec.t,amt:rec.amt,acc:rec.acc,note:rec.note||'',f,day:n>=31?0:n,dow:d.getDay(),mo:d.getMonth(),start:D0(rec.ts),end:0,on:true};
+window.arMake=(rec,f)=>{const d=new Date(rec.ts),n=d.getDate(),r={id:'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,5),t:rec.t,amt:rec.amt,acc:rec.acc,note:rec.note||'',f,day:n>=31?0:n,dow:d.getDay(),mo:d.getMonth(),start:D0(rec.ts),end:0,tm:d.getHours()*60+d.getMinutes(),on:true};
 if(rec.t==='t')r.to=rec.to;else r.cat=rec.cat;const x=fst(r,r.start);r.last=x;r.n=1;r.nx=adv(r,x);rec.ar=r.id;AR().push(r);return r};
 window.arNext=r=>dstr(r.nx);
 /* ---- Settings block and actions ---- */
@@ -1501,13 +1507,14 @@ if(!r.on||done(r))return;
 if(r.last===d0)P('a:'+r.id+':'+r.last,'info','🔁',L('Added today: '+title(r)+' '+fm(r.amt),'আজ যোগ হয়েছে: '+title(r)+' '+fm(r.amt)),'ar');
 if(r.nx===tm)P('a:'+r.id+':'+r.nx+':n','info','🔁',L('Tomorrow: '+title(r)+' '+fm(r.amt)+' will be added automatically','আগামীকাল '+title(r)+' '+fm(r.amt)+' নিজে নিজে যোগ হবে'),'ar')})};
 Object.assign(A,{aro:sheet,arn:()=>{G=newG();form()},are:id=>{const r=AR().find(x=>x.id===id);if(!r)return;G=fromR(r);form()},
+ardl:i=>{grab();i=+i;const k=G.dl.indexOf(i);if(k>=0)G.dl.splice(k,1);else G.dl.push(i);form()},ardp:k=>{grab();G.dl=k==='sunthu'?[0,1,2,3,4]:k==='monfri'?[1,2,3,4,5]:[0,1,2,3,4,5,6];form()},
 art:k=>{grab();if(G.t!==k){G.t=k;G.cat='';if(k!=='t')G.to=''}form()},arw:id=>{grab();G.acc=id;form()},arw2:id=>{grab();G.to=id;form()},arvs:save,
 arpz:id=>{const r=AR().find(x=>x.id===id);if(!r)return;if(r.on&&!done(r)){r.on=false;toast('⏸ '+AL('Paused','থামানো হয়েছে'))}else{if(!ok(r)){r.bad=1;return toast(AL('Fix the wallet or category first','আগে ওয়ালেট বা ক্যাটাগরি ঠিক করুন'))}r.on=true;r.bad=0;r.done=0;r.nx=fst(r,Math.max(D0(Date.now()),r.nx||0));if(r.end&&r.nx>r.end){r.on=false;r.done=1;toast(AL('This auto entry has already ended','এই অটো এন্ট্রি আগেই শেষ হয়েছে'))}else toast('▶️ '+AL('Resumed. Next: ','চালু হয়েছে। পরের: ')+dstr(r.nx))}sv();R();G=fromR(r);form()},
 ark:id=>{const r=AR().find(x=>x.id===id);if(!r||!r.on||done(r))return toast(AL('Resume it first','আগে চালু করুন'));r.nx=adv(r,r.nx);if(r.end&&r.nx>r.end){r.on=false;r.done=1}sv();R();toast('⏭️ '+(r.done?AL('Skipped. No more dates','বাদ দেওয়া হয়েছে। আর কোনো তারিখ নেই'):AL('Skipped. Next: ','বাদ দেওয়া হয়েছে। পরের: ')+dstr(r.nx)));G=fromR(r);form()},
 ard2:id=>{const r=AR().find(x=>x.id===id);if(!r)return;if(!confirm(AL('Delete this auto entry? Entries it already added stay in your records.','এই অটো এন্ট্রি মুছবেন? আগে যোগ হওয়া এন্ট্রিগুলো আপনার রেকর্ডে থেকে যাবে।')))return;S.ar=AR().filter(x=>x.id!==id);G=null;sv();R();sheet()}});
 /* run on every render, and again when the app comes back or a new day starts */
 const R3=R;R=function(){let m=0;try{m=run()}catch(e){}R3();if(m){try{const w=window.__arNew||[],l=w.length===1?AL('🔁 Added: '+title(w[0])+' '+fm(w[0].amt),'🔁 যোগ হয়েছে: '+title(w[0])+' '+fm(w[0].amt)):AL('🔁 '+nn(m)+' auto entries added','🔁 '+nn(m)+'টি অটো এন্ট্রি যোগ হয়েছে');toast(l)}catch(e){}}};
-const due=()=>{try{const t0=D0(Date.now());return AR().some(r=>r.on&&r.nx&&r.nx<=t0)}catch(e){return false}};
+const due=()=>{try{const t0=D0(Date.now());return AR().some(r=>r.on&&r.nx&&dueT(r,r.nx))}catch(e){return false}};
 const tick=()=>{if(document.hidden||!$('#m').hidden)return;if(due())R()};
 setInterval(tick,6e4);document.addEventListener('visibilitychange',()=>{if(!document.hidden)setTimeout(tick,300)});
 setTimeout(()=>{if(due())R()},0);
