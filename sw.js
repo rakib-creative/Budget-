@@ -1,4 +1,4 @@
-const V='budget-v45';
+const V='budget-v47';
 const EX='ext-v1'; // libraries and fonts from other sites: kept across app updates so the app can open with no internet
 const KEEP=[V,EX,'pdf-libs-v1'];
 const EXT=['https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js','https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js','https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js'];
